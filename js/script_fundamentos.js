@@ -63,4 +63,45 @@ console.log('A multiplicação dos números ', num2 * 5)
 console.log('A divisão entre os valores ', num3 / num2)
 console.log(`O resto da divisão entre 10 e 2 é: ${10 % 2}`)
 
-//Teste Lógico
+//Operadores Relacionais ou Comparação
+/*
+    > Maior
+    < Menor
+    >= Maior Igual
+    <= Menor Igual
+    != Diferente
+*/
+//Operadores Lógicos
+/*
+    && E
+    || OU
+*/
+
+
+
+//Teste Lógico (Seleção)
+
+let idade = 140
+if(idade >= 18){
+    console.log("Maior de Idade")
+}else{
+    console.log("Menor de idade")
+}
+
+// if ternário
+idade >= 18 ? console.log("Maior de Idade") : console.log("Menor de idade")
+
+/*
+    Renovação da CNH
+    18 até 49 -> 10 anos
+    50 até 69 -> 5 anos
+    70 acima -> 3 anos
+*/
+
+if(idade < 18){
+    console.log(`COM ${idade}, NÃO É PERMITIDO POSSUIR CNH`)
+}else if(idade < 50){
+    console.log(`COM ${idade}, O TEMPO DE RENOVAÇÃO É DE 5 ANOS`)
+}else if(idade >= 70){
+    console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 3 ANOS`)
+}
