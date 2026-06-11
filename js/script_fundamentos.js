@@ -81,7 +81,7 @@ console.log(`O resto da divisão entre 10 e 2 é: ${10 % 2}`)
 
 //Teste Lógico (Seleção)
 
-let idade = 18
+let idade = 150
 if(idade >= 18){
     console.log("Maior de Idade")
 }else{
@@ -100,12 +100,14 @@ idade >= 18 ? console.log("Maior de Idade") : console.log("Menor de idade")
 
 if(idade < 18){
     console.log(`COM ${idade}, NÃO É PERMITIDO POSSUIR CNH`)
-}else if(idade < 50){
+}else if((idade <= 50) && (idade >= 18)){
     console.log(`COM ${idade}, O TEMPO DE RENOVAÇÃO É DE 10 ANOS`)
-}else if(idade < 70){
+}else if((idade > 50) && (idade <= 70)){
     console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 5 ANOS`)
-}else{
+}else if((idade > 70) && (idade <= 120)){
     console.log('com ${idade}, O TEMPO PARA RENOVAÇÃO É DE 3 ANOS')
+}else{
+    console.log('SAI PRA LÁ MATUSALEM')
 }
 
 //Tabela verdade
